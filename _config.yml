@@ -1,0 +1,12 @@
+title: better and better
+description: Một chiếc thuyền nhỏ lênh đênh ngược gió
+url: ""
+baseurl: ""
+lang: vi
+timezone: Asia/Ho_Chi_Minh
+permalink: /:categories/:title/
+markdown: kramdown
+plugins: []
+collections:
+  pages:
+    output: true
