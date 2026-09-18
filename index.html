@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">một nơi chốn thật chậm</p><h1>better <em>and</em> better</h1><p class="hero-note">những mùa hạ, trang sách<br>và một chút dịu dàng</p></div>
+  <div class="sakura-tree" aria-label="Cây hoa anh đào minh hoạ"><span class="sun"></span><span class="trunk"></span><span class="canopy one"></span><span class="canopy two"></span><span class="canopy three"></span><span class="swing"></span></div>
+</section>
+<div class="content-grid">
+  <div class="main-content">
+    <section class="welcome paper-card"><span class="tape"></span><p class="eyebrow">dear you,</p><h2>Xin chào, tớ là Mellifluous</h2><p class="subtitle">— Một chiếc thuyền nhỏ lênh đênh ngược gió —</p><p>Đây là trang phụ của tớ, đăng linh ta linh tinh. Đăng truyện song song với trang chính, cập nhật muộn và không thường xuyên, phòng ngừa trang chính bị khóa.</p><p class="notice">Truyện trong nhà được chuyển ngữ dưới sự cho phép của tác giả với mục đích phi lợi nhuận, sẽ có mật khẩu để đảm bảo công sức của tác giả lẫn dịch giả.</p><span class="flower-doodle">✿</span></section>
+    <section class="letters" aria-label="Danh mục truyện">
+      <a class="letter blue" href="{{ '/hoan-thanh/' | relative_url }}"><span class="stamp">✿</span><small>mở phong bì</small><strong>Truyện đã<br>hoàn thành</strong></a>
+      <a class="letter pink" href="{{ '/dang-viet/' | relative_url }}"><span class="stamp">♡</span><small>đang dệt nên</small><strong>Truyện chưa<br>hoàn thành</strong></a>
+      <a class="letter yellow" href="{{ '/password/' | relative_url }}"><span class="stamp">⌘</span><small>cánh cửa bí mật</small><strong>Password</strong></a>
+      <a class="letter green" href="{{ '/goc-nho/' | relative_url }}"><span class="stamp">☘</span><small>mấy điều nhỏ xinh</small><strong>Một số<br>mục khác</strong></a>
+    </section>
+    <section class="post-section"><div class="section-heading"><p class="eyebrow">những dòng mới</p><h2>Vừa ghé vào</h2></div><div class="post-list">{% for post in site.posts limit: 4 %}<article class="post-card"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d · %m · %Y' }}</time><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.excerpt | strip_html | truncate: 120 }}</p><a class="read-more" href="{{ post.url | relative_url }}">đọc tiếp <span>→</span></a></article>{% endfor %}</div></section>
+  </div>
+  {% include sidebar.html %}
+</div>
+
