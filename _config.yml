@@ -1,7 +1,7 @@
 title: better and better
 description: Một chiếc thuyền nhỏ lênh đênh ngược gió
-url: ""
-baseurl: ""
+url: "https://maianhpham927-glitch.github.io"
+baseurl: "/better-and-better"
 lang: vi
 timezone: Asia/Ho_Chi_Minh
 permalink: /:categories/:title/
