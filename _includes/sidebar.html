@@ -1,0 +1,7 @@
+<aside class="sidebar">
+  <section class="side-card announcement"><span class="pin">●</span><p class="eyebrow">một lời nhắn</p><h2>Thông báo nhỏ</h2><p>Chào mừng cậu đến với căn phòng mùa hạ. Hãy đọc kỹ mục <a href="{{ '/password/' | relative_url }}">Password</a> trước khi tìm truyện nhé.</p><p class="tiny">Cập nhật cuối: 18.09.2026</p></section>
+  <section class="side-card select-card"><label for="story-select">Chọn một tác phẩm</label><div class="select-wrap"><select id="story-select" onchange="if(this.value) location.href=this.value"><option value="">Dạo một vòng quanh đây</option><option value="{{ '/hoan-thanh/' | relative_url }}">Truyện đã hoàn thành</option><option value="{{ '/dang-viet/' | relative_url }}">Truyện đang viết</option></select></div></section>
+  <section class="side-card updates"><p class="eyebrow">vừa được viết</p><h2>Chương mới</h2><ol>{% for post in site.posts limit: 4 %}<li><time>{{ post.date | date: '%d.%m' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}</ol><a class="all-posts" href="{{ '/goc-nho/' | relative_url }}">xem tất cả <span>→</span></a></section>
+  <div class="side-sprig" aria-hidden="true">❀<br><span>╲</span></div>
+</aside>
+
